@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/space.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  opacity: 0.8; 
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #ffffff; 
+  margin-bottom: 20px;
+  font-size: 2.5em; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #00ffcc; 
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff; 
+  background: rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #00cc99;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #00ffcc; 
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00cc99;
+  transform: scale(1.05); 
+}
+
+#qrcode {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #00ffcc; 
+  padding: 20px;
+  border-radius: 12px; 
+  background: rgba(255, 255, 255, 0.1); 
+  overflow: hidden; 
+}
